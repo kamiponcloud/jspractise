@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e8edf5;
+}
+
+#d1{
+    user-select: none;
+}
+
+
+#d2{
+    margin: 0 auto;
+    width: 200px;
+    height: 20px;
+    background-color: pink;
+}
+.bili{
+    margin-top: -10px;
+    -webkit-user-drag: none;
+    user-select: none;
+    animation: go 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes go {
+    0%{opacity: 0.7;}
+    100%{opacity: 0;margin-top: -60px;display: none;}
+}
+
