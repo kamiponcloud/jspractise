@@ -8,9 +8,32 @@
 <!--    拟态化时钟-->
     <link rel="stylesheet" href="css/time.css">
     <script src="JavaScript/time.js"></script>
+<!--    轮播图-->
+    <link rel="stylesheet" href="css/lunbo.css">
+    <script src="JavaScript/lunbo.js"></script>
+<!--    tab浏览-->
+    <link rel="stylesheet" href="css/tab.css">
+    <script src="JavaScript/tab.js"></script>
 </head>
 <body onclick="bilibili(event)" onmousemove="fn(event)">
-    <div id = "d1">坐标0,0</div>
+<input type="button" value="dian" onclick="scr()">
+    <section class="tab">
+        <div id = "d1">坐标0,0</div>
+        <div class="tabbody">
+            <ul>
+                <li onmouseover="showdiv(1)">1</li>
+                <li onmouseover="showdiv(2)">2</li>
+                <li onmouseover="showdiv(3)">3</li>
+                <li onmouseover="showdiv(4)">4</li>
+                <li onmouseover="showdiv(5)">5</li>
+            </ul>
+            <div id="tabd1" class="tabd">qaq</div>
+            <div id="tabd2" class="tabd">wxw</div>
+            <div id="tabd3" class="tabd">oxo</div>
+            <div id="tabd4" class="tabd">0.0</div>
+            <div id="tabd5" class="tabd">~~~</div>
+        </div>
+    </section>
     <section class="time">
         <div class="body">
             <div class="time-body">
@@ -36,6 +59,16 @@
             </div>
         </div>
         <div id="Time" class="icon">时间</div>
+<!--        轮播图-->
+        <div class="lunbo">
+            <img id="img1" src="img/1.jpg" alt="" onmouseover="stoplunbo()" onmouseout="startlunbo()">
+            <ul>
+                <li id="lunbtn1" onmouseover="tintu(1,this)" onmouseout="startlunbo()">1</li>
+                <li id="lunbtn2" onmouseover="tintu(2,this)" onmouseout="startlunbo()">2</li>
+                <li id="lunbtn3" onmouseover="tintu(3,this)" onmouseout="startlunbo()">3</li>
+            </ul>
+        </div>
+
     </section>
 </body>
 </html>

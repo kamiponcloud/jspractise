@@ -1,0 +1,42 @@
+.lunbo{
+    position: absolute;
+    left: 55%;
+    margin-left: -100px;
+    top: 20%;
+    margin-top: -100px;
+    width: 400px;
+    height: 475px;
+    background-color: pink;
+    overflow: hidden;
+}
+
+.lunbo>img{
+    width: 400px;
+    height: auto;
+}
+
+.lunbo>ul{
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: 0;
+    margin-bottom: -70px;
+    display: flex;
+    width: 400px;
+    height: 100px;
+    justify-content: space-around;
+}
+.lunbo>ul>li{
+    user-select:none;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    background-color: rgba(102, 102, 102, 0.5);
+    transition: background-color 0.5s ease-in;
+}
+#lunbtn1{
+    background-color: rgba(177,59,59,0.5);
+}

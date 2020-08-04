@@ -1,7 +1,10 @@
 window.onload=init();
 
+var lunboT;
+
 function init() {
     window.setInterval("time()",100);
+    lunboT = window.setInterval("lunbo()",2000);
 }
 function time() {
     var n = new Date();
@@ -16,3 +19,4 @@ function time() {
     m=m/6/2+t*30;
     T.style.transform = "rotateZ("+m+"deg)";
 }
+
